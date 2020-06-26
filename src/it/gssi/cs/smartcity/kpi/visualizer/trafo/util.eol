@@ -1,0 +1,10 @@
+operation kpi_model::Value getValue(){
+return self.valuetype.getActualizedValue();
+}
+
+operation kpi_model::AggregatedValue getActualizedValue(){
+return self.actualizedvalue;
+}
+operation kpi_model::SingleValue getActualizedValue(){
+return self.actualizedvalue;
+}

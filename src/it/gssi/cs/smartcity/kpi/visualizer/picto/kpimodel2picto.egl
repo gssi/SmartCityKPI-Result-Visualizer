@@ -1,0 +1,72 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<title>Modeling view </title>
+ 
+<link rel="stylesheet" type="text/css" href="[%=getFile("css/joint.css")%]" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<link href="[%=getFile("css/bootstrap.min.css")%]" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="[%=getFile("css/font-awesome.min.css")%]" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="[%=getFile("css/nprogress.css")%]" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="[%=getFile("css/bootstrap-progressbar-3.3.4.min.css")%]" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="[%=getFile("css/daterangepicker.css")%]" rel="stylesheet">
+    
+    <!-- Custom Theme Style -->
+    <link href="[%=getFile("css/custom.min.css")%]" rel="stylesheet">
+</head>
+<body>
+
+<div class="x_panel fixed_height_320">
+                  <div class="x_title">
+                    <h2>Profile Settings <small>Sessions</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Settings 1</a>
+                            <a class="dropdown-item" href="#">Settings 2</a>
+                          </div>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="dashboard-widget-content">
+                      <ul class="quick-list">
+                        <li><i class="fa fa-line-chart"></i><a href="#">Achievements</a></li>
+                        <li><i class="fa fa-thumbs-up"></i><a href="#">Favorites</a></li>
+                        <li><i class="fa fa-calendar-o"></i><a href="#">Activities</a></li>
+                        <li><i class="fa fa-cog"></i><a href="#">Settings</a></li>
+                        <li><i class="fa fa-area-chart"></i><a href="#">Logout</a></li>
+                      </ul>
+
+                      <div class="sidebar-widget">
+                        <h4>Profile Completion</h4>
+                        <canvas width="150" height="80" id="chart_gauge_01" class="" style="width: 160px; height: 100px;"></canvas>
+                        <div class="goal-wrapper">
+                          <span id="gauge-text" class="gauge-value gauge-chart pull-left">3,200</span>
+                          <span class="gauge-value pull-left">%</span>
+                          <span id="goal-text" class="goal-value pull-right">100%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+</body>
+</html>
+[%
+operation getFile(file : String) {
+	return getImage(file);
+}
+%]

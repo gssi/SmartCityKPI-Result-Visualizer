@@ -1,0 +1,12 @@
+rule Graphical 
+	transform kpimodel : kpi_model::KpiModel  {
+	parameters : Map {
+		
+		"format" = "html",
+		"path" = List{"KPIModel", "KPI Evaluation Model"},
+		"icon" = "barchart"
+	}
+	
+	template: "kpimodel2picto.egl"
+	
+}

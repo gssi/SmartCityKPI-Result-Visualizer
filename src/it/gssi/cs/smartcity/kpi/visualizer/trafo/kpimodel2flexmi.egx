@@ -1,0 +1,11 @@
+rule KpiModel2Flexmi
+  transform kpimodel : kpi_model::KpiModel {
+ 
+  template : "kpimodel2flexmi.egl"
+
+   target :  kpimodel.subject + ".flexmi"
+ 
+  
+}
+
+
