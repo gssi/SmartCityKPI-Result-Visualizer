@@ -3,10 +3,31 @@ rule Graphical
 	parameters : Map {
 		
 		"format" = "html",
-		"path" = List{"KPIModel", "KPI Evaluation Model"},
+		"path" = List{"KPIModel", "Evaluation"},
 		"icon" = "barchart"
 	}
 	
 	template: "kpimodel2picto.egl"
+	 
+}
+
+
+rule Category
+transform dimension: kpi_model::Dimension {
+
+parameters {
+		
+		return Map{
+			"mainDimension" = dimension.name,
+			"format" = "html",
+			"path" = Sequence{"KPIModel", "Dimensions", dimension.name},
+			"icon" = "diagram-fffbd7",
+			"layers" = Sequence {
+				Map {"id"="documentation", "title"="Documentation"}
+			}
+		};
+	}
 	
+	template: "classdiagram.egl"
+
 }

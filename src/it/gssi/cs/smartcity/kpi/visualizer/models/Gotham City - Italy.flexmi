@@ -2,26 +2,26 @@
 <?render-egx ../picto/kpimodel2picto.egx?>  
  
 <KpiModel subject="Gotham City - Italy">
-<Dimension name="Environment">
-		<Dimension name="Environment">
-     
+<Dimension name="Environment">       
+		<Dimension name="Environment"> 
+            
 		<Category name="Public Spaces and Nature">
 			<Kpi name="GA" description="Green Areas" unit="hectares/100.000inhabitants" >
-			<Value>
+			<Value>   
 			<AggregatedRealValue actualizedvalue="48.7235"></AggregatedRealValue>
 			
-			</Value>
+			</Value>   
 			</Kpi>
 		</Category>
 		<Category name="Air Quality">
 			<Kpi name="AP" description="Air Pollution Index" unit="" >
 			<Value>
 			<AggregatedRangedValue actualizedvalue="Good"></AggregatedRangedValue>
-			
+			 
 			</Value>
 			</Kpi>
 		</Category>
-		</Dimension>
+		</Dimension> 
 	
 </Dimension>
 <Dimension name="Economy">
@@ -34,7 +34,7 @@
 			
 			</Value>
 			</Kpi>
-		</Category>
+		</Category> 
 		</Dimension>
 	
 </Dimension>
