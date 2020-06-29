@@ -105,11 +105,9 @@
     <script src="[%=getFile("js/moment.min.js")%]"></script>
     <script src="[%=getFile("js/daterangepicker.js")%]"></script>
 
-    <!-- Custom Theme Scripts -->
-    <script src="[%=getFile("js/custom.min.js")%]"></script>
-   
-        <script >
-        function init_gauge() {
+       
+        <script>
+       function init_gauge() {
 
     if (typeof (Gauge) === 'undefined') { return; }
 
@@ -141,6 +139,24 @@
         var chart_gauge_01 = new Gauge(chart_gauge_01_elem).setOptions(chart_gauge_settings);
 
     }
+
+
+    if ($('#gauge-text').length) {
+
+        chart_gauge_01.maxValue = 100;
+        chart_gauge_01.animationSpeed = 32;
+        chart_gauge_01.set(75);
+        chart_gauge_01.setTextField(document.getElementById("gauge-text"));
+
+    }
+
+    
+
+
+}
+
+init_gauge();
+   
         </script>
     
 </body>
