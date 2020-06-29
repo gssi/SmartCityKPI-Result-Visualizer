@@ -1,10 +1,40 @@
 operation kpi_model::Value getValue(){
-return self.valuetype.getActualizedValue();
+	return self.valuetype.getActualizedValue();
 }
+operation kpi_model::Value getTargetValue(){
+	return self.valuetype.getTargetValue();
 
+}
 operation kpi_model::AggregatedValue getActualizedValue(){
-return self.actualizedvalue;
+	return self.actualizedvalue;
 }
 operation kpi_model::SingleValue getActualizedValue(){
-return self.actualizedvalue;
+	return self.actualizedvalue;
+}
+
+operation kpi_model::AggregatedRangedValue getTargetValue(){
+	return self.ranges.rangeName;
+}
+
+operation kpi_model::AggregatedIntegerValue getTargetValue(){
+	return self.targetvalue;
+}
+
+operation kpi_model::AggregatedRealValue getTargetValue(){
+	return self.targetvalue;
+}
+operation kpi_model::SingleValue getTargetValue(){
+	return self.targetvalue;
+}
+
+operation kpi_model::Category getSubject(): String{
+	return self.eContainer.getKPIModel();
+}
+
+operation kpi_model::Dimension getKPIModel() : KpiModel{
+	if(self.eContainer.isTypeOf(KpiModel)){
+		return self.eContainer.subject;
+	}else{
+		self.eContainer.getKPIModel();
+	}
 }

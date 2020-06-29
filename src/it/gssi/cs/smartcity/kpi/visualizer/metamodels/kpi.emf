@@ -2,131 +2,128 @@
 package kpi_model;
 
 class KpiModel {
-  val Dimension[*] dimension;
-  attr String subject;
-  
+	val Dimension[*] dimension;
+	attr String subject;
 }
 
 class Dimension {
-
-  val Dimension[*] dimension;
-  val Category[*] category;
-  attr String name;
+	val Dimension[*] dimension;
+	val Category[*] category;
+	attr String name;
 }
 
 class Category {
-  val Kpi[*] kpi;
-   val Parameter[*] parameter;
-  attr String name;
-
+	val Kpi[*]#category kpi;
+	val Parameter[*] parameter;
+	attr String name;
 }
 
 class Kpi {
-  attr String name;
-  attr String description;
- ref Category[1]#kpi category;
-  val Value[1]#kpi value;
-    attr String unit;
+	attr String name;
+	attr String description;
+	ref Category[1]#kpi category;
+	val Value[1]#kpi value;
+	attr String unit;
 }
 
 class Value {
- 
- ref Kpi[1]#value kpi;
-  val ValueType[1]#value valuetype;
+	ref Kpi[1]#value kpi;
+	val ValueType[1]#value valuetype;
 }
 
 class Parameter {
-  attr String name;
-
+	attr String name;
 }
 
 abstract class ValueType {
-ref Value[1]#valuetype value;
-
+	ref Value[1]#valuetype value;
 }
 
-abstract class CalculatedValue extends ValueType{
-	attr String calculatedBy;  
-	
+abstract class CalculatedValue extends ValueType {
+	attr String calculatedBy;
 }
+
 abstract class SingleValue extends CalculatedValue {
- 
-  ref Parameter[1] parameter;
+	ref Parameter[1] parameter;
 }
 
 class StaticRealValue extends SingleValue {
-  attr double staticvalue;
+	attr double staticvalue;
 }
 
 class BoolValue extends SingleValue {
-  attr boolean actualizedvalue;
+	attr boolean actualizedvalue;
 }
+
 class RealValue extends SingleValue {
-  attr double actualizedvalue;
+	attr double actualizedvalue;
 }
+
 class IntegerValue extends SingleValue {
-  attr Integer actualizedvalue;
+	attr Integer actualizedvalue;
 }
+
 class StringValue extends SingleValue {
-  attr String actualizedvalue;
+	attr String actualizedvalue;
 }
 
 class RangedValue extends ValueType {
-  attr String actualizedvalue;
-  val Range[*] ranges;
+	attr String actualizedvalue;
+	val Range[*] ranges;
 }
 
 class Range {
-attr String rangeName;
-  attr double min;
-  attr double max;
-  
+	attr String rangeName;
+	attr double min;
+	attr double max;
+	attr double targetvalue;
+	
 }
 
- abstract class AggregatedValue extends CalculatedValue {
-  
-
-  attr Operation[1] oper;
-  val ValueType[*] values;
-  
+abstract class AggregatedValue extends CalculatedValue {
+	attr Operation[1] oper;
+	ref ValueType[+] values;
 }
-
 
 class AggregatedBoolValue extends AggregatedValue {
-  attr boolean actualizedvalue;
+	attr boolean actualizedvalue;
+		attr boolean targetvalue;
+	
 }
 
 class AggregatedRealValue extends AggregatedValue {
-  attr double actualizedvalue;
+	attr double actualizedvalue;
+	attr double targetvalue;
 }
+
 class AggregatedIntegerValue extends AggregatedValue {
-  attr Integer actualizedvalue;
+	attr Integer actualizedvalue;
+	attr Integer targetvalue;
 }
+
 class AggregatedStringValue extends AggregatedValue {
-  attr String actualizedvalue;
+	attr String actualizedvalue;
+	attr String targetvalue;
+	
 }
 
 class AggregatedRangedValue extends AggregatedValue {
-  attr String actualizedvalue;
-  val Range[*] ranges;
-  
+	attr String actualizedvalue;
+	val Range[*] ranges;
 }
 
-enum Operation{
-	GET=0;
-	SUM=1;
-	DIFF=2;
-	AVG=3;
-	MIN=4;
-	MAX=5;
-	DIV=6;
-	AND=7;
-	OR=8;
-	XOR=9;
-	MULT=10;
+enum Operation {
+	GET = 0;
+	SUM = 1;
+	DIFF = 2;
+	AVG = 3;
+	MIN = 4;
+	MAX = 5;
+	DIV = 6;
+	AND = 7;
+	OR = 8;
+	XOR = 9;
+	MULT = 10;
+	CEN = 11;
 }
-
-
-
-
 

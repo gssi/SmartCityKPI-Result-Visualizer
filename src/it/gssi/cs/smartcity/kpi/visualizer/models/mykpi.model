@@ -126,7 +126,7 @@
     <category xmi:id="_fHEWsJnoEeqb6_1e3fZsNw" name="Digital Infrastructure">
       <kpi xmi:id="_sFvMkJnoEeqb6_1e3fZsNw" name="TM" description="Availability of Transport Monitoring" unit="yes/no">
         <value xmi:id="_zmF_oJnoEeqb6_1e3fZsNw">
-          <valuetype xsi:type="kpi:BoolValue" xmi:id="_1okNsJnoEeqb6_1e3fZsNw" parameter="_3tTFkJnoEeqb6_1e3fZsNw" actualizedvalue="true"/>
+          <valuetype xsi:type="kpi:BoolValue" xmi:id="_1okNsJnoEeqb6_1e3fZsNw" parameter="_3tTFkJnoEeqb6_1e3fZsNw" actualizedvalue="true" targetvalue="true"/>
         </value>
       </kpi>
       <parameter xmi:id="_3tTFkJnoEeqb6_1e3fZsNw" name="RealtimeTransportMonitoring"/>
