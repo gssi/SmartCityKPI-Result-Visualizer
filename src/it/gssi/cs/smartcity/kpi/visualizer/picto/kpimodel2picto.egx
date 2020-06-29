@@ -28,6 +28,6 @@ parameters {
 		};
 	}
 	
-	template: "classdiagram.egl"
+	template: "dimension2picto.egl"
 
 }

@@ -8,6 +8,7 @@ class KpiModel {
 }
 
 class Dimension {
+
   val Dimension[*] dimension;
   val Category[*] category;
   attr String name;
