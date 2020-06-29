@@ -1,3 +1,8 @@
+pre{
+var containerDimensions=Dimension.all.select(d|d.dimension.size()>0);
+
+}
+
 rule Graphical 
 	transform kpimodel : kpi_model::KpiModel  {
 	parameters : Map {
@@ -12,8 +17,8 @@ rule Graphical
 }
 
 
-rule Category
-transform dimension: kpi_model::Dimension {
+rule Dimensions
+transform dimension: kpi_model::Dimension in: containerDimensions{
 
 parameters {
 		
@@ -21,6 +26,27 @@ parameters {
 			"mainDimension" = dimension.name,
 			"format" = "html",
 			"path" = Sequence{"KPIModel", "Dimensions", dimension.name},
+			"icon" = "diagram-fffbd7",
+			"layers" = Sequence {
+				Map {"id"=dimension.name, "title"="Dimension"}
+			}
+		};
+	}
+	
+	template: "dimension2picto.egl"
+
+}
+
+
+rule Categories
+transform category: kpi_model::Category {
+
+parameters {
+		
+		return Map{
+			"mainDimension" = category.name,
+			"format" = "html",
+			"path" = Sequence{"KPIModel", category.eContainer.name, category.name},
 			"icon" = "diagram-fffbd7",
 			"layers" = Sequence {
 				Map {"id"="documentation", "title"="Documentation"}
