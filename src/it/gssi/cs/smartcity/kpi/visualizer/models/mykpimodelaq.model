@@ -94,7 +94,7 @@
     <category xmi:id="_2gb3cJaTEeq0XaWaWNepEA" name="Pollution and Waste">
       <kpi xmi:id="_Np_0AJaUEeq0XaWaWNepEA" name="NO2 emissions" description="NO2 emissions" unit="ng/m3">
         <value xmi:id="_GOZy4JaZEeq0XaWaWNepEA">
-          <valuetype xsi:type="kpi:AggregatedRealValue" xmi:id="_HlDcwJaZEeq0XaWaWNepEA" oper="DIV" actualizedvalue="8.002298685439265E-5" targetvalue="40.0">
+          <valuetype xsi:type="kpi:AggregatedRealValue" xmi:id="_HlDcwJaZEeq0XaWaWNepEA" oper="DIV" actualizedvalue="8.00229868543926" targetvalue="40.0">
             <values xsi:type="kpi:RealValue" xmi:id="_XE8SMJaZEeq0XaWaWNepEA" parameter="_e_u6IEEIEeqtQNccB7KKVQ" actualizedvalue="5.57"/>
             <values xsi:type="kpi:RealValue" xmi:id="_Y47YUJaZEeq0XaWaWNepEA" parameter="_txIfMHTMEeqUPfKnSGBMIQ" actualizedvalue="69605.0"/>
           </valuetype>
@@ -102,7 +102,7 @@
       </kpi>
       <kpi xmi:id="_T4QGAJaUEeq0XaWaWNepEA" name="PM2.5 emissions" description="PM2.5 emissions" unit="ng/m3">
         <value xmi:id="_aTyz0JaZEeq0XaWaWNepEA">
-          <valuetype xsi:type="kpi:AggregatedRealValue" xmi:id="_bBj4wJaZEeq0XaWaWNepEA" oper="DIV" actualizedvalue="1.607643129085554E-4" targetvalue="5.0">
+          <valuetype xsi:type="kpi:AggregatedRealValue" xmi:id="_bBj4wJaZEeq0XaWaWNepEA" oper="DIV" actualizedvalue="1.60764312908555" targetvalue="5.0">
             <values xsi:type="kpi:RealValue" xmi:id="_dLtcIJaZEeq0XaWaWNepEA" parameter="_aKaJ8EEIEeqtQNccB7KKVQ" actualizedvalue="11.19"/>
             <values xsi:type="kpi:RealValue" xmi:id="_emJZ0JaZEeq0XaWaWNepEA" parameter="_txIfMHTMEeqUPfKnSGBMIQ" actualizedvalue="69605.0"/>
           </valuetype>
