@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<kpi:KpiModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:kpi="http://cs.gssi.it/kpi" xmi:id="_c-LBQD0GEeqSXfxb0fTk4w" subject="L'Aquila">
+<kpi:KpiModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:kpi="http://cs.gssi.it/kpi" xmi:id="_c-LBQD0GEeqSXfxb0fTk4w" subject="Bolzano">
   <dimension xmi:id="_eldvMD0GEeqSXfxb0fTk4w" name="Environment">
     <dimension xmi:id="_H64H4HTQEeqUPfKnSGBMIQ" name="Environment">
       <category xmi:id="_LKhTsHTQEeqUPfKnSGBMIQ" name="Public Spaces and Nature">
