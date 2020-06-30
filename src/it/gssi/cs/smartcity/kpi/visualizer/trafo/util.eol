@@ -5,6 +5,7 @@ operation kpi_model::Value getTargetValue(){
 	return self.valuetype.getTargetValue();
 
 }
+
 operation kpi_model::AggregatedValue getActualizedValue(){
 	return self.actualizedvalue;
 }

@@ -77,7 +77,7 @@
       <category xmi:id="_WnUD8HTMEeqUPfKnSGBMIQ" name="Transport">
         <kpi xmi:id="_Z3-jcHTMEeqUPfKnSGBMIQ" name="BN" description="Bicycle Network" unit="km/100.000inhabitants">
           <value xmi:id="_59hjkHTMEeqUPfKnSGBMIQ">
-            <valuetype xsi:type="kpi:AggregatedRealValue" xmi:id="_cMH64HTNEeqUPfKnSGBMIQ" oper="DIV" actualizedvalue="307.1596113034737" targetvalue="261.5">
+            <valuetype xsi:type="kpi:AggregatedRealValue" xmi:id="_cMH64HTNEeqUPfKnSGBMIQ" oper="DIV" actualizedvalue="307.1596113034737" targetvalue="361.5">
               <values xsi:type="kpi:RealValue" xmi:id="_j-Ur4HTNEeqUPfKnSGBMIQ" parameter="_o929cHTMEeqUPfKnSGBMIQ" actualizedvalue="330.0"/>
               <values xsi:type="kpi:AggregatedRealValue" xmi:id="_sliZUHTNEeqUPfKnSGBMIQ" oper="CEN" actualizedvalue="1.07436">
                 <values xsi:type="kpi:RealValue" xmi:id="_xQUtcHTNEeqUPfKnSGBMIQ" parameter="_txIfMHTMEeqUPfKnSGBMIQ" actualizedvalue="107436.0"/>
@@ -94,7 +94,7 @@
     <category xmi:id="_2gb3cJaTEeq0XaWaWNepEA" name="Pollution and Waste">
       <kpi xmi:id="_Np_0AJaUEeq0XaWaWNepEA" name="NO2 emissions" description="NO2 emissions" unit="ng/m3">
         <value xmi:id="_GOZy4JaZEeq0XaWaWNepEA">
-          <valuetype xsi:type="kpi:AggregatedRealValue" xmi:id="_HlDcwJaZEeq0XaWaWNepEA" oper="DIV" actualizedvalue="2.8668230388324213E-5" targetvalue="40.0">
+          <valuetype xsi:type="kpi:AggregatedRealValue" xmi:id="_HlDcwJaZEeq0XaWaWNepEA" oper="DIV" actualizedvalue="2.866823038832421" targetvalue="40.0">
             <values xsi:type="kpi:RealValue" xmi:id="_XE8SMJaZEeq0XaWaWNepEA" parameter="_e_u6IEEIEeqtQNccB7KKVQ" actualizedvalue="3.08"/>
             <values xsi:type="kpi:RealValue" xmi:id="_Y47YUJaZEeq0XaWaWNepEA" parameter="_txIfMHTMEeqUPfKnSGBMIQ" actualizedvalue="107436.0"/>
           </valuetype>
@@ -102,7 +102,7 @@
       </kpi>
       <kpi xmi:id="_T4QGAJaUEeq0XaWaWNepEA" name="PM2.5 emissions" description="PM2.5 emissions" unit="ng/m3">
         <value xmi:id="_aTyz0JaZEeq0XaWaWNepEA">
-          <valuetype xsi:type="kpi:AggregatedRealValue" xmi:id="_bBj4wJaZEeq0XaWaWNepEA" oper="DIV" actualizedvalue="1.4287575859116126E-4" targetvalue="5.0">
+          <valuetype xsi:type="kpi:AggregatedRealValue" xmi:id="_bBj4wJaZEeq0XaWaWNepEA" oper="DIV" actualizedvalue="1.4287575859116126" targetvalue="5.0">
             <values xsi:type="kpi:RealValue" xmi:id="_dLtcIJaZEeq0XaWaWNepEA" parameter="_aKaJ8EEIEeqtQNccB7KKVQ" actualizedvalue="15.35"/>
             <values xsi:type="kpi:RealValue" xmi:id="_emJZ0JaZEeq0XaWaWNepEA" parameter="_txIfMHTMEeqUPfKnSGBMIQ" actualizedvalue="107436.0"/>
           </valuetype>
