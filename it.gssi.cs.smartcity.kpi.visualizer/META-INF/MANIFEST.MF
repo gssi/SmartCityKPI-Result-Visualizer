@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Visualizer
+Bundle-SymbolicName: it.gssi.cs.smartcity.kpi.visualizer
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: it.gssi.cs.smartcity.kpi.visualizer
+Bundle-RequiredExecutionEnvironment: JavaSE-13
